@@ -29,6 +29,8 @@ components:
     container:
       image: registry.redhat.io/devspaces/udi-base-rhel10
       env:
+        - name: USE_JAVA21
+          value: "true"
         - name: QUARKUS_HTTP_HOST
           value: 0.0.0.0
         - name: QUARKUS_ANALYTICS_DISABLED
