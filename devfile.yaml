@@ -27,7 +27,7 @@ projects:
 components:
   - name: tools
     container:
-      image: registry.redhat.io/devspaces/udi-base-rhel10
+      image: registry.redhat.io/devspaces/udi-rhel9
       env:
         - name: USE_JAVA21
           value: "true"
