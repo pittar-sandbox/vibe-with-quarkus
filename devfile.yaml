@@ -67,7 +67,7 @@ commands:
       label: "1. Package the application"
       component: tools
       workingDir: ${PROJECTS_ROOT}/vibe-with-quarkus
-      commandLine: "./mvnw package"
+      commandLine: "mvn package"
       group:
         kind: build
         isDefault: true
@@ -76,7 +76,7 @@ commands:
       label: "2. Start Development mode (Hot reload + debug)"
       component: tools
       workingDir: ${PROJECTS_ROOT}/vibe-with-quarkus
-      commandLine: "./mvnw compile quarkus:dev"
+      commandLine: "mvn compile quarkus:dev"
       group:
         kind: run
         isDefault: true
